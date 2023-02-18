@@ -6,7 +6,7 @@ from audioldm import text_to_audio, build_model
 
 model_id = "haoheliu/AudioLDM-S-Full"
 
-audioldm = build_model()
+audioldm = build_model(ckpt_path="./audioldm-s-full.ckpt")
 # audioldm=None
 
 # def predict(input, history=[]):

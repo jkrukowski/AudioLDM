@@ -35,10 +35,7 @@ def make_batch_for_text_to_audio(text, batchsize=1):
 
 
 def build_model(
-    ckpt_path=os.path.join(
-        os.path.expanduser("~"),
-        ".cache/audioldm/audioldm-s-full.ckpt",
-    ),
+    ckpt_path,
     config=None,
 ):
     if torch.cuda.is_available():
